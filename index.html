@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wubba Lubba Dub Dub</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-text">
+          <h1><img src="assets/header-logo.png" alt="Header" /></h1>
+          <img src="assets/rick.gif" alt="Rick" class="rick" />
+          <h2>
+            Click on Rick to get schwifty!<i class="fas fa-chevron-up"></i>
+          </h2>
+          <audio
+            id="wubba-lubba"
+            src="assets/get schwifty.mp3"
+            preload="auto"
+          ></audio>
+        </div>
+      </header>
+      <form action="#">
+        <div class="search-bar">
+          <label for="search-input" class="sr-only"></label>
+          <input
+            type="text"
+            placeholder="Enter squanch name here"
+            id="search-input"
+          />
+          <input type="submit" value="Boom! Big reveal!" class="submit-btn" />
+        </div>
+      </form>
+      <section class="results"></section>
+    </div>
+    <footer>
+      <div>Created by Maxim Belomestnov at Juno College</div>
+      <div>
+        Data provided by
+        <a href="https://rickandmortyapi.com/"> The Rick and Morty API</a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/1c7adf5975.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
