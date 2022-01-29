@@ -14,34 +14,35 @@
     <title>Wubba Lubba Dub Dub</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="header-text">
-          <h1><img src="assets/header-logo.png" alt="Header" /></h1>
-          <img src="assets/rick.gif" alt="Rick" class="rick" />
-          <h2>
-            Click on Rick to get schwifty!<i class="fas fa-chevron-up"></i>
-          </h2>
-          <audio
-            id="wubba-lubba"
-            src="assets/get schwifty.mp3"
-            preload="auto"
-          ></audio>
-        </div>
-      </header>
-      <form action="#">
-        <div class="search-bar">
-          <label for="search-input" class="sr-only"></label>
-          <input
-            type="text"
-            placeholder="Enter squanch name here"
-            id="search-input"
-          />
-          <input type="submit" value="Boom! Big reveal!" class="submit-btn" />
-        </div>
-      </form>
-      <section class="results"></section>
-    </div>
+    <header>
+      <div class="header-text">
+        <h1><img src="assets/header-logo.png" alt="Header" /></h1>
+        <img src="assets/rick.gif" alt="Rick" class="rick" />
+        <h2>Click on Rick to get schwifty!<i class="fas fa-chevron-up"></i></h2>
+        <audio
+          id="wubba-lubba"
+          src="assets/get schwifty.mp3"
+          preload="auto"
+        ></audio>
+      </div>
+    </header>
+    <!-- ./Header -->
+    <form action="#">
+      <div class="search-bar">
+        <label for="search-input" class="sr-only"></label>
+        <input
+          type="text"
+          placeholder="Enter squanch name here"
+          id="search-input"
+          class="search-input"
+        />
+        <input type="submit" value="Boom! Big reveal!" class="submit-btn" />
+      </div>
+    </form>
+    <!-- ./Form -->
+    <section class="results"></section>
+    <!-- ./Results -->
+
     <footer>
       <div>Created by Maxim Belomestnov at Juno College</div>
       <div>
@@ -49,6 +50,7 @@
         <a href="https://rickandmortyapi.com/"> The Rick and Morty API</a>
       </div>
     </footer>
+    <!-- ./Footer -->
     <script
       src="https://kit.fontawesome.com/1c7adf5975.js"
       crossorigin="anonymous"
