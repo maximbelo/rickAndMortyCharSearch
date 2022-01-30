@@ -220,6 +220,45 @@ template {
 }
 
 /* ===========================================
+Typography
+=========================================== */
+body {
+  font-family: "Creepster", cursive;
+}
+
+input {
+  font-family: "Creepster", cursive;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.search-input,
+.submit-btn {
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+.results {
+  font-family: "Comic Neue", cursive;
+  font-size: medium;
+}
+
+.error-message {
+  font-family: "Creepster", cursive;
+  font-size: 30px;
+  line-height: 1;
+}
+
+footer {
+  font-family: "Creepster", cursive;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+/* ===========================================
 Main styles
 =========================================== */
 body {
@@ -227,12 +266,11 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1650px;
-  height: 100vh;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .header-text {
-  font-family: "Creepster", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,13 +284,11 @@ h1 img {
   width: 100%;
 }
 
-.rick:hover {
+.rick {
   cursor: pointer;
 }
 
 h2 {
-  font-size: 50px;
-  line-height: 1;
   color: #07a4b3;
   margin: 20px 0 25px;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.04em -0.04em 0.04em #7ffa67,
@@ -276,31 +312,27 @@ input {
 .search-input {
   width: 300px;
   border-radius: 10px;
-  padding: 10px 5px 10px 5px;
+  padding: 0.8rem 1rem;
   background-color: #7ffa67;
-  font-family: "Creepster", cursive;
-  font-size: larger;
   color: #07a4b3;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #7ffa67,
     0 0 0.2em #7ffa67;
-  letter-spacing: 1px;
 }
 
 .submit-btn {
-  font-family: "Creepster", cursive;
-  padding: 10px 5px 10px 5px;
+  padding: 0.8rem 1rem;
   border-radius: 10px;
   background-color: #7ffa67;
   color: #07a4b3;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #7ffa67,
     0 0 0.2em #7ffa67;
-  font-size: larger;
-  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.submit-btn:focus {
   background-color: #07a4b3;
-  cursor: pointer;
   color: #7ffa67;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #07a4b3,
     0 0 0.2em #07a4b3;
@@ -310,11 +342,8 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
   padding: 0;
-  margin: 30px;
-  font-family: "Comic Neue", cursive;
-  font-size: medium;
+  margin: 2rem;
   color: #ffffff;
 }
 
@@ -361,12 +390,10 @@ input {
 }
 
 .error-message {
-  font-family: "Creepster", cursive;
-  font-size: 30px;
-  line-height: 1;
   color: #ff0000;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.04em -0.04em 0.04em #caad2c,
     0 0 0.4em #df3d3d;
+  margin: 0;
 }
 
 .char-error-box {
@@ -382,14 +409,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-  margin-bottom: 10px;
-  font-family: "Creepster", cursive;
   color: #ffffff;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #7ffa67,
     0 0 0.4em #07a4b3;
-  letter-spacing: 2px;
-  font-size: 15px;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer a {
@@ -427,6 +453,12 @@ Media Queries
 
   .char-error-box {
     width: 250px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .char-box {
+    width: 80%;
   }
 }
 
