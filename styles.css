@@ -238,6 +238,14 @@ body {
   align-items: center;
 }
 
+h1 {
+  text-align: center;
+}
+
+h1 img {
+  width: 100%;
+}
+
 .rick:hover {
   cursor: pointer;
 }
@@ -251,11 +259,18 @@ h2 {
     0 0 0.4em #7ffa67;
 }
 
+h2 i {
+  margin-left: 0.5rem;
+}
+
 form {
-  font-family: "Creepster", cursive;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 0 0.5rem;
 }
 
 .search-input {
@@ -314,12 +329,13 @@ form {
   border: 1px inset #ffffff;
 }
 
-.char-box p {
-  margin-top: 1em;
+.char-box:hover,
+.char-box:focus {
+  transform: scale(1.04);
 }
 
-.char-box:hover {
-  transform: scale(1.1);
+.char-box p {
+  margin-top: 1em;
 }
 
 .img-title {
@@ -385,9 +401,12 @@ footer a {
 Media Queries
 =========================================== */
 @media screen and (max-width: 730px) {
+  h1 {
+    text-align: center;
+  }
+
   h1 img {
-    width: 90%;
-    padding-left: 50px;
+    width: 100%;
   }
 
   .rick {
@@ -396,9 +415,6 @@ Media Queries
 
   h2 {
     font-size: 30px;
-    margin: 20px 0 25px;
-    text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #7ffa67,
-      0 0 0.1em #7ffa67;
   }
 
   .error-message {
@@ -416,10 +432,8 @@ Media Queries
 
 @media screen and (max-width: 464px) {
   h2 {
-    font-size: 20px;
-    margin: 20px 0 25px;
-    text-shadow: 0.02em 0.02em 0.02em #000000, -0.02em -0.02em 0.02em #7ffa67,
-      0 0 0.1em #7ffa67;
+    font-size: 23px;
+    margin: 1.5rem 0;
   }
 
   .search-input {
