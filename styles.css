@@ -449,6 +449,7 @@ Media Queries
 
   h2 {
     font-size: 30px;
+    box-shadow: 1px 1px 0px #000, 3px 2px 3px #7ffa67, 3px 2px 3px #07a4b3;
   }
 
   .error-message {
@@ -474,6 +475,7 @@ Media Queries
   h2 {
     font-size: 23px;
     margin: 1.5rem 0;
+    box-shadow: 1px 1px 0px #000, 3px 2px 3px #7ffa67, 3px 2px 3px #07a4b3;
   }
 
   .search-input {
