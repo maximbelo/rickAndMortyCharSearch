@@ -1,11 +1,11 @@
 "use strict";
 
-// application to search for Rick and Morty characters
-//    on form submit get input from user through text input element
-//    use this input value to search Rick and Morty API
-//    if search does not produce a result, let the user know
-//    if it does, get results from API and display -> character name, alive/dead/unknown, last known location, episode first seen in
-//    display results to page
+// Application to search for Rick and Morty characters
+//    On form submit get input from user through text input element
+//    Use this input value to search Rick and Morty API
+//    If search does not produce a result, let the user know
+//    If it does, get results from API and display -> character name, alive/dead/unknown, last known location, episode first seen in
+//    Display results to page
 
 const app = {};
 
@@ -32,6 +32,7 @@ app.getCharacterInfo = function (query) {
       </div>
       `;
       $(".results").append(errorHandler);
+      $("#search-input").val("");
     });
 };
 // function that will display user search results to page
