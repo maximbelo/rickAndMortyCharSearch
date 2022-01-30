@@ -301,6 +301,7 @@ h2 {
   margin: 20px 0 25px;
   text-shadow: 0.02em 0.02em 0.02em #000000, -0.04em -0.04em 0.04em #7ffa67,
     0 0 0.4em #7ffa67;
+  text-align: center;
 }
 
 h2 i {
@@ -424,6 +425,7 @@ footer {
 
 footer p {
   margin: 0;
+  text-align: center;
 }
 
 footer a {
@@ -491,15 +493,8 @@ Media Queries
     font-size: 20px;
   }
 
-  .error-box {
-    width: 200px;
-  }
-
+  .error-box,
   .char-error-box {
     width: 200px;
-  }
-
-  footer {
-    font-size: 10px;
   }
 }
